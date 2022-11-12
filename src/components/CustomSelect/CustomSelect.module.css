@@ -1,0 +1,95 @@
+.darkMode {
+  color: rgb(225, 225, 225);
+  box-shadow: 0 2px 6px rgb(7, 7, 7) !important;
+  background-color: #2b323e;
+}
+.lightMode {
+  color: rgb(37, 37, 37);
+  background-color: #fff;
+  box-shadow: 0 0px 7px rgb(142, 142, 142);
+}
+.CustomSelect {
+  padding: 10px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.CustomSelectLight:active {
+  background-color: rgb(235, 235, 235);
+}
+.CustomSelectDark:active {
+  background-color: rgb(25, 25, 25);
+}
+.dropDownIcon {
+  position: absolute;
+  right: 10px;
+  font-size: 19px;
+}
+
+.dropDownParent {
+  box-shadow: 0 0px 7px rgb(142, 142, 142);
+  background-color: #fff;
+  position: relative;
+}
+.dropDown {
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 0px;
+  bottom: 0;
+  left: -15px;
+  padding: 10px 16px;
+}
+.dropDownBlock {
+  flex-direction: column;
+  display: flex;
+}
+.dropDownItemLight {
+  color: rgb(25, 25, 25);
+  z-index: 9;
+  user-select: none;
+  cursor: pointer;
+  padding: 8px 32px;
+  background-color: #fff;
+  box-shadow: 0px 13px 10px rgb(142, 142, 142);
+}
+.dropDownItemLight:first-child {
+  z-index: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0px 2px 10px rgb(142, 142, 142);
+}
+.dropDownItemLight:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-shadow: 0px 2px 2px rgb(142, 142, 142);
+}
+.dropDownItemLight:hover {
+  background-color: rgb(215, 215, 215);
+}
+.dropDownItemDark {
+  color: rgb(225, 225, 225);
+  box-shadow: 0px 13px 10px rgb(7, 7, 7);
+  background-color: #2b323e;
+  z-index: 9;
+  user-select: none;
+  cursor: pointer;
+  padding: 8px 32px;
+}
+.dropDownItemDark:first-child {
+  z-index: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0px 2px 10px rgb(7, 7, 7);
+}
+.dropDownItemDark:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-shadow: 0px 2px 2px rgb(7, 7, 7);
+}
+.dropDownItemDark:hover {
+  background-color: rgb(25, 25, 25);
+}

@@ -1,0 +1,50 @@
+.CustomizeSection {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.SearchBar {
+  border-radius: 3px;
+  position: relative;
+}
+.SearchInput {
+  padding: 10px 45px;
+  width: 390px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+.SearchIcon {
+  font-size: 21px;
+  color: rgb(60, 60, 60);
+  top: 10px;
+  left: 18px;
+  position: absolute;
+}
+.selectBox {
+  width: 200px;
+  height: 100% !important;
+  border-radius: 3px;
+  color: rgb(70, 70, 70);
+}
+
+.darkMode {
+  color: rgb(225, 225, 225);
+  box-shadow: 0 2px 6px rgb(7, 7, 7) !important;
+  background-color: #2b323e;
+}
+.lightMode {
+  color: rgb(37, 37, 37);
+  background-color: #fff;
+  box-shadow: 0 0px 7px rgb(143, 142, 142);
+}
+.inputDarkMode {
+  background-color: #2b323e;
+  border-color: #2b323e;
+  color: rgb(225, 225, 225);
+}
+.inputDarkMode::placeholder {
+  color: rgb(220, 220, 220);
+}

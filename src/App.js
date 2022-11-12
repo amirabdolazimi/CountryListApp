@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Route, Switch } from "react-router-dom";
+import { useState } from "react";
+import Layout from "./Layout/Layout";
+import CountryDetailPage from "./Pages/CountryDetailPage";
+import HomePage from "./Pages/HomePage";
+import CountriesProvider from "./Providers/CountriesProvider";
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+  darkMode
+    ? document.body.classList.add("darkBody")
+    : document.body.classList.remove("darkBody");
+
+  const proudOfThisFunc = () => {
+    console.log("🎉");
+  };
+  proudOfThisFunc();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <CountriesProvider>
+        <Layout setDarkMode={setDarkMode} darkMode={darkMode}>
+          <Route
+            path="/"
+            render={() => <HomePage darkMode={darkMode} />}
+            exact={true}
+          />
+          <Route
+            path="/countrydetail"
+            render={() => <CountryDetailPage darkMode={darkMode} />}
+          />
+        </Layout>
+      </CountriesProvider>
+    </Switch>
   );
 }
 

@@ -1,0 +1,102 @@
+.countryDetail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.back_btn {
+  margin: 40px 0;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+.back_btn button {
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  padding: 6px 30px 6px 45px;
+  position: relative;
+  border-style: none;
+  border-radius: 5px;
+}
+.back_btn button span {
+  left: 20px;
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+}
+.countryInformations {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.countryInformations h4 {
+  font-size: 27px;
+}
+.CountrySubDetail {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  word-spacing: 3px;
+  letter-spacing: 0.5px;
+  justify-content: space-between;
+}
+.CountrySubDetail div p {
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 0;
+}
+.CountrySubDetail div span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.border_countries {
+  margin-top: 10px;
+  display: flex;
+  color: rgb(37, 37, 37);
+  letter-spacing: 0.5px;
+  align-items: center;
+  font-size: 17px;
+}
+.countries_label {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+.countries_label label {
+  padding: 2.5px 12px;
+  margin: 7px 5px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.countryFlag {
+  width: 50%;
+}
+.countryFlag img {
+  width: 95%;
+}
+.darkMode {
+  box-shadow: 0 2px 6px rgb(7, 7, 7) !important;
+  background-color: #2b323e;
+  color: rgb(230, 230, 230);
+  border: 1px solid #2b323e;
+}
+.lightMode {
+  background-color: #fff;
+  color: rgb(37, 37, 37);
+  box-shadow: 0 0px 7px rgb(142, 142, 142);
+  border: 1px solid #ccc;
+}
+.lightColor {
+  color: rgb(240, 240, 240);
+}
+.darkColor {
+  color: rgb(20, 20, 20);
+}
+.lightSpan {
+  color: rgb(180, 180, 180);
+}
+.darkSpan {
+  color: rgb(110, 110, 110);
+}
