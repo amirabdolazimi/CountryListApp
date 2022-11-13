@@ -1,6 +1,13 @@
+@media only screen and (max-width: 768px) {
+  .CountryList {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .CountryList {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 80px;
 }

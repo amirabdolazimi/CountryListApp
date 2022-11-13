@@ -1,3 +1,19 @@
+@media only screen and (max-width: 1024px) {
+  .Country {
+    width: 35% !important;
+    margin: 0px 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Country {
+    width: 70% !important;
+    padding-bottom: 10px;
+  }
+  .Country_flag img {
+    height: auto !important;
+  }
+}
+
 a {
   text-decoration: none;
   color: rgb(37, 37, 37);

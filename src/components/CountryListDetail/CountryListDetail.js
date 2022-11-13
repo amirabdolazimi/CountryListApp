@@ -45,7 +45,6 @@ const CountryDetail = (props) => {
           Back
         </button>
       </div>
-      
       <div className={styles.countryDetail}>
         <div className={styles.countryFlag}>
           <img src={flags.png} alt={flag} />
@@ -57,10 +56,10 @@ const CountryDetail = (props) => {
             </h4>
           </div>
           <div className={styles.CountrySubDetail}>
-            <div>
+            <div className={styles.firstSectionDetails}>
               <div>
                 <p className={darkMode ? styles.lightColor : styles.darkColor}>
-                  Native Name :{" "}
+                  Native Name :
                 </p>
                 <span className={darkMode ? styles.lightSpan : styles.darkSpan}>
                   {countryNativeName}

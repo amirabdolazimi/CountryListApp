@@ -22,6 +22,7 @@ a {
 body {
   font-family: countryFont;
   box-sizing: border-box;
+  margin: 0;
 }
 .lightBody {
   background-color: hsl(0, 0%, 98%);

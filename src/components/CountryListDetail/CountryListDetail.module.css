@@ -1,3 +1,34 @@
+@media only screen and (max-width: 1024px) {
+  .CountrySubDetail {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .countryInformations {
+    flex-direction: column;
+  }
+  .firstSectionDetails {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .countryDetail {
+    width: 100% !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .countryInformations {
+    width: 100% !important;
+  }
+  .countryFlag {
+    width: 100% !important;
+  }
+  .countryInformations h4 {
+    margin-top: 40px;
+  }
+  .firstSectionDetails {
+    margin-bottom: 40px;
+  }
+}
 .countryDetail {
   display: flex;
   align-items: center;
@@ -45,7 +76,7 @@
 .CountrySubDetail div p {
   display: inline-block;
   font-size: 14px;
-  margin: 4px 0;
+  margin: 5px 0;
 }
 .CountrySubDetail div span {
   font-size: 14px;
@@ -74,7 +105,7 @@
   width: 50%;
 }
 .countryFlag img {
-  width: 95%;
+  width: 100%;
 }
 .darkMode {
   box-shadow: 0 2px 6px rgb(7, 7, 7) !important;

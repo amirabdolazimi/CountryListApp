@@ -15,9 +15,7 @@ const CountryList = ({ darkMode }) => {
     }
   };
 
-  return (
-    <div className={`${styles.CountryList} bg-red-700`}>{renderCountries()}</div>
-  );
+  return <div className={styles.CountryList}>{renderCountries()}</div>;
 };
 
 export default CountryList;

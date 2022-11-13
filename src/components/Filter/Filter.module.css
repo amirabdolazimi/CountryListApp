@@ -1,3 +1,15 @@
+@media only screen and (max-width: 768px) {
+  .CustomizeSection {
+    flex-direction: column;
+  }
+  .SearchBar {
+    margin-bottom: 40px;
+  }
+  .selectBox {
+    width: 55% !important;
+  }
+}
+
 .CustomizeSection {
   margin-top: 45px;
   display: flex;
@@ -10,8 +22,8 @@
   position: relative;
 }
 .SearchInput {
-  padding: 10px 45px;
-  width: 390px;
+  padding: 13px 45px;
+  width: 300px;
   outline: none;
   border: none;
   border-radius: 3px;
@@ -19,7 +31,7 @@
 .SearchIcon {
   font-size: 21px;
   color: rgb(60, 60, 60);
-  top: 10px;
+  top: 9px;
   left: 18px;
   position: absolute;
 }
