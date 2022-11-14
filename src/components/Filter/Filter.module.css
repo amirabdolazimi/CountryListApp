@@ -3,13 +3,16 @@
     flex-direction: column;
   }
   .SearchBar {
+    width: 100%;
     margin-bottom: 40px;
   }
   .selectBox {
     width: 55% !important;
   }
+  .SearchInput {
+    width: 50% !important;
+  }
 }
-
 .CustomizeSection {
   margin-top: 45px;
   display: flex;
