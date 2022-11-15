@@ -12,7 +12,7 @@ const CountryHeader = ({ setDarkMode, darkMode }) => {
       </div>
       <div
         className={styles.themes}
-        onDoubleClick={() => setDarkMode((prevState) => !prevState)}
+        onClick={() => setDarkMode((prevState) => !prevState)}
       >
         <span>{darkMode ? <BsMoon /> : <BsSun />}</span>
         <p> {darkMode ? "Dark Mode" : "Light Mode"}</p>

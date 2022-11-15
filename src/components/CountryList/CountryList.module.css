@@ -4,7 +4,11 @@
     align-items: center;
   }
 }
-
+@media only screen and (max-width: 1024px) {
+  .CountryList {
+    justify-content: space-around !important;
+  }
+}
 .CountryList {
   display: flex;
   flex-wrap: wrap;
