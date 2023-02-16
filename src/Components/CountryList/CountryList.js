@@ -25,7 +25,7 @@ const CountryList = () => {
   const renderCountries = () => {
     if (!allCountries || allCountries.length === 0)
       return (
-        <p className="mx-14 mt-6 tracking-wider text-slate-800 text-3xl">
+        <p className="mx-14 mt-6 dark:text-slate-200 tracking-wider text-slate-800 text-3xl">
           {messageRendering}
         </p>
       );
@@ -33,7 +33,7 @@ const CountryList = () => {
     if (allCountries && allCountries !== []) {
       return (
         <>
-          <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-12 lg:mx-14 md:grid-cols-3 md:gap-8 md:mx-6 justify-items-center mx-14">
+          <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-14 lg:mx-14 md:grid-cols-3 md:gap-8 md:mx-6 justify-items-center mx-14">
             {allCountries &&
               allCountries.map((country) => {
                 return (

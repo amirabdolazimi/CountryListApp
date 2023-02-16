@@ -23,7 +23,7 @@ const CustomSelectBox = () => {
     <div className="px-4 mt-8 grid w-2/3 lg:mt-14 lg:w-2/6 md:w-2/6 xl:w-1/6 relative ">
       <div
         onClick={clickHandler}
-        className="hover:cursor-pointer shadow active:bg-slate-300 grid grid-cols-2 bg-white relative lg:py-4 px-6 rounded py-3"
+        className="hover:cursor-pointer dark:bg-slate-700 dark:text-slate-200 shadow active:bg-slate-300 grid grid-cols-2 bg-white relative lg:py-4 px-6 rounded py-3"
       >
         <p className="w-max text-sm lg:font-semibold">{sortValue}</p>
         <span className="absolute right-5 top-3 lg:top-4 text-xl font-extrabold">
@@ -31,7 +31,7 @@ const CustomSelectBox = () => {
         </span>
       </div>
       <div
-        className={`shadow absolute w-5/6 bg-white top-14 left-4 rounded-md ${
+        className={`shadow dark:shadow-xl absolute w-5/6 bg-white top-14 left-4 rounded-md ${
           !dropDownStatus
             ? "opacity-0 hidden transition-all ease-out duration-300"
             : "opacity-100 block transition-all ease-out duration-300"
@@ -40,7 +40,7 @@ const CustomSelectBox = () => {
         {options.map((item) => {
           return (
             <div
-              className="py-2 px-6 hover:cursor-pointer active:bg-slate-200"
+              className="py-2 px-6 dark:bg-slate-700 dark:text-slate-200 hover:cursor-pointer active:bg-slate-200"
               key={item.value}
               onClick={() => sortHandler(item.label)}
             >

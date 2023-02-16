@@ -9,6 +9,7 @@ module.exports = {
     "./src/Components/Country/Country.js",
     "./src/Components/CountryDetail/CountryDetail.js",
   ],
+  darkMode: "class",
   theme: {
     extend: {},
   },

@@ -14,10 +14,10 @@ const CountryDetail = () => {
 
   console.log(country);
   return (
-    <div className="px-6 grid-cols-1 my-10 lg:px-14">
+    <div className="px-6 grid-cols-1 my-10 lg:px-14 ">
       <div className="mb-14">
         <Link to="/" className="inline-block">
-          <button className="flex items-center bg-white px-5 py-1.5 pl-8 shadow-md rounded">
+          <button className="flex items-center bg-white dark:bg-slate-700 dark:text-slate-100 dark:shadow-2xl px-5 py-1.5 pl-8 shadow-md rounded">
             <span className="font-bolder">
               <BsArrowLeft />
             </span>
@@ -25,7 +25,7 @@ const CountryDetail = () => {
           </button>
         </Link>
       </div>
-      <div className="grid md:grid-cols-2">
+      <div className="grid md:grid-cols-2 lg:grid-rows-1 dark:text-slate-100">
         <div className="w-full">
           <img
             className="w-full"
@@ -35,7 +35,7 @@ const CountryDetail = () => {
         </div>
         <div className="grid grid-cols-1 text-start mt-10 md:mt-0 lg:mt-0 md:ml-10 lg:ml-10 xl:ml-20">
           <div className="mt-2 mb-5 md:mb-2 lg:mb-0 lg:mt-0">
-            <h2 className="font-bold text-3xl md:text-2xl lg:text-3xl xl:mt-10">
+            <h2 className="font-bold text-3xl md:text-2xl lg:text-3xl xl:mt-4">
               {country.name.common}
             </h2>
           </div>
@@ -45,31 +45,41 @@ const CountryDetail = () => {
                 <p className="font-semibold mr-2 text-lg xl:text-lg md:text-base">
                   Native Name :
                 </p>
-                <span className="text-slate-600">{nativeName}</span>
+                <span className="text-slate-600 dark:text-slate-400">
+                  {nativeName}
+                </span>
               </div>
               <div className="my-2.5 flex items-center">
                 <p className="font-semibold mr-2 text-lg xl:text-lg md:text-base">
                   Population :
                 </p>
-                <span className="text-slate-600">{country.population} </span>
+                <span className="text-slate-600 dark:text-slate-400">
+                  {country.population}{" "}
+                </span>
               </div>
               <div className="my-2.5 flex items-center">
                 <p className="font-semibold mr-2 text-lg xl:text-lg md:text-base">
                   Region :
                 </p>
-                <span className="text-slate-600">{country.region}</span>
+                <span className="text-slate-600 dark:text-slate-400">
+                  {country.region}
+                </span>
               </div>
               <div className="my-2.5 flex items-center">
                 <p className="font-semibold mr-2 text-lg xl:text-lg md:text-base">
                   Sub Region :
                 </p>
-                <span className="text-slate-600">{country.subregion} </span>
+                <span className="text-slate-600 dark:text-slate-400">
+                  {country.subregion}{" "}
+                </span>
               </div>
               <div className="my-2.5 flex items-center">
                 <p className="font-semibold mr-2 text-lg xl:text-lg md:text-base">
                   Capital :
                 </p>
-                <span className="text-slate-600">{country.capital[0]} </span>
+                <span className="text-slate-600 dark:text-slate-400">
+                  {country.capital[0]}{" "}
+                </span>
               </div>
             </div>
             <div className="mt-7 md:mt-1 lg:mt-0">
@@ -77,20 +87,27 @@ const CountryDetail = () => {
                 <p className="font-semibold mr-2 text-lg xl:text-lg md:text-base">
                   Top Level Domain :
                 </p>
-                <span className="text-slate-600">{country.tld[0]}</span>
+                <span className="text-slate-600 dark:text-slate-400">
+                  {country.tld[0]}
+                </span>
               </div>
               <div className="my-2.5 flex items-center">
                 <p className="font-semibold mr-2 text-lg xl:text-lg md:text-base">
                   Currencies :
                 </p>
-                <span className="text-slate-600">{currencies}</span>
+                <span className="text-slate-600 dark:text-slate-400">
+                  {currencies}
+                </span>
               </div>
               <div className="my-2.5 flex items-center">
                 <p className="font-semibold mr-2 text-lg xl:text-lg md:text-base">
                   Languages :
                 </p>
                 {languages.map((item) => (
-                  <span className="mr-1 text-slate-600" key={item}>
+                  <span
+                    className="mr-1 text-slate-600 dark:text-slate-400"
+                    key={item}
+                  >
                     {item},
                   </span>
                 ))}
@@ -99,7 +116,7 @@ const CountryDetail = () => {
           </div>
         </div>
         <div className="mt-7 grid grid-cols-1 text-start md:col-span-full lg:ml-10 lg:mt-0 lg:col-start-2 xl:flex xl:ml-20">
-          <div className="xl:w-64">
+          <div className="xl:w-50">
             <h3 className="text-2xl md:text-lg xl:text-lg font-semibold">
               Border Countries :
             </h3>
@@ -108,7 +125,7 @@ const CountryDetail = () => {
             {country.borders
               ? country.borders.map((item) => (
                   <div
-                    className="py-3 bg-white xl:py-1 text-center rounded shadow-md xl:px-8"
+                    className="py-3 bg-white dark:bg-slate-700 xl:py-1 text-center rounded shadow-md xl:px-8"
                     key={item}
                   >
                     {item}
