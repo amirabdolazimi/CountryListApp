@@ -33,7 +33,7 @@ const CountryList = () => {
     if (allCountries && allCountries !== []) {
       return (
         <>
-          <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-14 lg:mx-14 md:grid-cols-3 md:gap-8 md:mx-6 justify-items-center mx-14">
+          <div className="grid grid-cols-1 sm:gap-2 mx-14 lg:grid-cols-4 lg:gap-14 lg:mx-14 md:grid-cols-3 md:gap-8 md:mx-6 justify-items-center">
             {allCountries &&
               allCountries.map((country) => {
                 return (
