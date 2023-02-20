@@ -8,6 +8,8 @@ const CountryList = () => {
   const [countries, setCountries] = useState([]);
   const [allCountries, setAllCountries] = useState([]);
   const [messageRendering, setMessageRendering] = useState("Loading .... !");
+  const [sortValue, setSortValue] = useState("");
+  const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
     axios
@@ -21,6 +23,53 @@ const CountryList = () => {
         console.log(err);
       });
   }, []);
+
+  const filter = (searchValue, sortValue) => {
+    let filtered;
+    const filteredCountries = countries.filter((c) =>
+      c.name.common.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    switch (sortValue) {
+      case "All":
+        filtered = [...filteredCountries];
+        break;
+      case "Africa": {
+        filtered = filteredCountries.filter((c) => c.region === "Africa");
+        break;
+      }
+      case "Asia": {
+        filtered = filteredCountries.filter((c) => c.region === "Asia");
+        break;
+      }
+      case "Americas": {
+        filtered = filteredCountries.filter((c) => c.region === "Americas");
+        break;
+      }
+      case "Europe": {
+        filtered = filteredCountries.filter((c) => c.region === "Europe");
+        break;
+      }
+      case "Oceania": {
+        filtered = filteredCountries.filter((c) => c.region === "Oceania");
+        break;
+      }
+      default: {
+        filtered = [...filteredCountries];
+        break;
+      }
+    }
+    setAllCountries(filtered);
+  };
+
+  const sort = (value) => {
+    setSortValue(value);
+    filter(searchValue, value);
+  };
+
+  const searchHandler = (e) => {
+    setSearchValue(e.target.value);
+    filter(e.target.value, sortValue);
+  };
 
   const renderCountries = () => {
     if (!allCountries || allCountries.length === 0)
@@ -51,8 +100,8 @@ const CountryList = () => {
   return (
     <Fragment>
       <div className="lg:flex lg:align-items-center lg:justify-between lg:px-10 md:flex md:align-items-center md:justify-between md:px-2">
-        <Search countries={countries} setAllCountries={setAllCountries} />
-        <CustomSelectBox />
+        <Search onSearch={searchHandler} searchValue={searchValue} />
+        <CustomSelectBox sortValue={sortValue} onSort={sort} />
       </div>
       {renderCountries()}
     </Fragment>

@@ -12,7 +12,6 @@ const CountryDetail = () => {
   );
   const languages = Object.keys(country.languages);
 
-  console.log(country);
   return (
     <div className="px-6 grid-cols-1 my-10 lg:px-14 ">
       <div className="mb-14">
