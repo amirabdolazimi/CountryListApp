@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { RxCaretDown } from "react-icons/rx";
-import "./CustomSelectBox.css";
 const CustomSelectBox = ({ onSort, sortValue }) => {
   const options = [
     { label: "All", value: "All" },

@@ -53,7 +53,7 @@ const CountryDetail = () => {
                   Population :
                 </p>
                 <span className="text-slate-600 dark:text-slate-400">
-                  {country.population}{" "}
+                  {country.population}
                 </span>
               </div>
               <div className="my-2.5 flex items-center">
@@ -69,7 +69,7 @@ const CountryDetail = () => {
                   Sub Region :
                 </p>
                 <span className="text-slate-600 dark:text-slate-400">
-                  {country.subregion}{" "}
+                  {country.subregion}
                 </span>
               </div>
               <div className="my-2.5 flex items-center">
@@ -77,7 +77,7 @@ const CountryDetail = () => {
                   Capital :
                 </p>
                 <span className="text-slate-600 dark:text-slate-400">
-                  {country.capital[0]}{" "}
+                  {country.capital[0]}
                 </span>
               </div>
             </div>

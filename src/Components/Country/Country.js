@@ -6,14 +6,14 @@ const Country = ({ country }) => {
       <Link to="/country-detail" state={country}>
         <div className="countryFlag">
           <img
-            className="rounded-t border-b border-slate-100"
+            className="rounded-t border-b dark:border-slate-600 border-slate-100"
             src={country.flags.png}
             alt={country.flags.alt}
           />
         </div>
         <div className="px-5 py-6">
-          <div className="pb-3">
-            <h2 className="font-bold text-lg md:text-xl">
+          <div className="pb-3 sm:pb-0">
+            <h2 className="font-bold text-lg md:text-xl sm:text-sm">
               {country.name.common}
             </h2>
           </div>
