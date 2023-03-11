@@ -6,7 +6,7 @@ const Country = ({ country }) => {
       <Link to="/country-detail" state={country}>
         <div className="countryFlag">
           <img
-            className="rounded-t border-b dark:border-slate-600 border-slate-100"
+            className="rounded-t border-b dark:border-slate-700 border-slate-200"
             src={country.flags.png}
             alt={country.flags.alt}
           />
