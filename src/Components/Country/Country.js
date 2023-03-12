@@ -12,7 +12,7 @@ const Country = ({ country }) => {
           />
         </div>
         <div className="px-5 py-6">
-          <div className="pb-3 sm:pb-0">
+          <div className="pb-3">
             <h2 className="font-bold text-lg md:text-xl sm:text-sm">
               {country.name.common}
             </h2>
