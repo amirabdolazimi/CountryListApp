@@ -12,12 +12,12 @@ const Country = ({ country }) => {
           />
         </div>
         <div className="px-5 py-6">
-          <div className="pb-3">
+          <div className="pb-1 lg:pb-3 md:pb-3 xl:pb-3">
             <h2 className="font-bold text-lg md:text-xl sm:text-sm">
               {country.name.common}
             </h2>
           </div>
-          <div className="mt-1">
+          <div className="mt-0.5 lg:mt-1 md:mt-1 xl:mt-1">
             <span className="font-semibold text-sm md:font-bold">
               Population :
             </span>
@@ -25,13 +25,13 @@ const Country = ({ country }) => {
               {country.population}
             </span>
           </div>
-          <div className="mt-1">
+          <div className="mt-0.5 lg:mt-1 md:mt-1 xl:mt-1">
             <span className="font-semibold text-sm md:font-bold">Region :</span>
             <span className="text-slate-700 dark:text-slate-400 ml-1 text-xs md:text-base">
               {country.region}
             </span>
           </div>
-          <div className="mt-1">
+          <div className="mt-0.5 lg:mt-1 md:mt-1 xl:mt-1">
             <span className="font-semibold text-sm md:font-bold">
               Capital :
             </span>
