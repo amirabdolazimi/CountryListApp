@@ -34,8 +34,13 @@ const CountryDetail = () => {
         </div>
         <div className="grid grid-cols-1 text-start mt-10 md:mt-0 lg:mt-0 md:ml-10 lg:ml-10 xl:ml-20">
           <div className="mt-2 mb-5 md:mb-2 lg:mb-0 lg:mt-0">
-            <h2 className="font-bold text-3xl md:text-2xl lg:text-3xl xl:mt-4">
+            <h2 className="font-bold flex justify-between text-3xl md:text-2xl lg:text-3xl xl:mt-4">
               {country.name.common}
+              {country.name.common === "Iran" && (
+                <p className="text-red-600 font-bold mt-0.5 text-2xl">
+                  #Women_Freedom_Life
+                </p>
+              )}
             </h2>
           </div>
           <div className="lg:grid lg:grid-cols-2">
@@ -130,7 +135,7 @@ const CountryDetail = () => {
                     {item}
                   </div>
                 ))
-              : "it no has border country !"}
+              : "there is no border country !"}
           </div>
         </div>
       </div>
